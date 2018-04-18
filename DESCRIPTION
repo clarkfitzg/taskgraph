@@ -1,7 +1,7 @@
 Package: taskgraph
 Version: 0.0.1
 Date: 2018-04-17
-Title: Statically analyzes R code to produce a task graph representing parallelism
+Title: Static Analysis of R Code for Parallelism
 Authors@R: person("Clark", "Fitzgerald", role = c("aut", "cre"),
                      email = "clarkfitzg@gmail.com")
 Author: Clark Fitzgerald [aut, cre]
@@ -10,13 +10,14 @@ Depends:
     R (>= 3.1.0)
 Imports:
     CodeDepends,
-    whisker
 Suggests: 
     roxygen2,
     knitr,
     rmarkdown,
     testthat,
-Description: TODO
+Description: The goal of this package is to identify and represent implicit
+    parallelism in R code. We use a task graph as the primary data
+    structure.
 License: MIT + file LICENSE
 URL: https://github.com/clarkfitzg/taskgraph
 BugReports: https://github.com/clarkfitzg/taskgraph
